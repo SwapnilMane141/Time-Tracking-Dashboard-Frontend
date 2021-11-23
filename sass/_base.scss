@@ -1,0 +1,31 @@
+
+$color-background:hsl(226, 43%, 10%);
+$color-primary:#fff;
+$color-white-blue:hsl(236, 100%, 87%);
+$color-dark-blue:hsl(235, 46%, 20%);
+
+$color-light-blue:hsl(235, 45%, 61%);
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $color-primary;
+    background-color: $color-background;
+    overflow-x: hidden;
+}
