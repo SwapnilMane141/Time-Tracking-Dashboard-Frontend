@@ -54,7 +54,8 @@
                 padding: .5rem 3rem;
                 border-radius: 1rem;
                 height: 68%;
-                // z-index: 10;
+                position: relative;
+                z-index: 10;
                 
 
                 .profile-img{
@@ -84,21 +85,31 @@
                 height: 35%;
                 border-radius: 1rem;
                 transform: translateY(-3rem);
-                position: relative;
-                z-index: -1;
+                // position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                // z-index: -1;
                 
                 .space{
                     display: block;
                     padding-bottom: 5rem;
                 }
                 .schedule{
-                    color:white;
-                    display: block;
+                    display: inline-block;
+                    color:$color-white-blue;
+                    // background-color: orangered;
                     padding: 1rem 3rem;
                     font-size: 1.6rem;
                     position: relative;
                     z-index: 15;
                     cursor: pointer;
+                }
+
+                .schedule-active{
+                    color:white;
                 }
             }
         }
